@@ -1,6 +1,8 @@
 # ShittyImageCrop
 Couldn't find anything similar online so I hacked this together. I'm not a great coder so please don't judge :) <3
 
+All you need to do is specify the image and aspect ratio that you want. ShittyImageCrop makes sure you can zoom and pan to select the portion of the image you would like to crop
+
 I might make this into a Pod one day when I get the time to learn how to do it :)
 
 ![screenshot](/screenshot.png?raw=true)
