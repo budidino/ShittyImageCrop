@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CA31E171DC1851900FE6518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA31E161DC1851900FE6518 /* AppDelegate.swift */; };
+		8CA31E191DC1851900FE6518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA31E181DC1851900FE6518 /* ViewController.swift */; };
+		8CA31E1E1DC1851900FE6518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA31E1D1DC1851900FE6518 /* Assets.xcassets */; };
+		8CA31E211DC1851900FE6518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA31E1F1DC1851900FE6518 /* LaunchScreen.storyboard */; };
+		8CA31E291DC1856900FE6518 /* ShittyImageCropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA31E281DC1856900FE6518 /* ShittyImageCropVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CA31E131DC1851900FE6518 /* ShittyImageCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShittyImageCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA31E161DC1851900FE6518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CA31E181DC1851900FE6518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CA31E1D1DC1851900FE6518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CA31E201DC1851900FE6518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CA31E221DC1851900FE6518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA31E281DC1856900FE6518 /* ShittyImageCropVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShittyImageCropVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CA31E101DC1851900FE6518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CA31E0A1DC1851900FE6518 = {
+			isa = PBXGroup;
+			children = (
+				8CA31E151DC1851900FE6518 /* ShittyImageCrop */,
+				8CA31E141DC1851900FE6518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CA31E141DC1851900FE6518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CA31E131DC1851900FE6518 /* ShittyImageCrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CA31E151DC1851900FE6518 /* ShittyImageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				8CA31E161DC1851900FE6518 /* AppDelegate.swift */,
+				8CA31E181DC1851900FE6518 /* ViewController.swift */,
+				8CA31E281DC1856900FE6518 /* ShittyImageCropVC.swift */,
+				8CA31E1D1DC1851900FE6518 /* Assets.xcassets */,
+				8CA31E1F1DC1851900FE6518 /* LaunchScreen.storyboard */,
+				8CA31E221DC1851900FE6518 /* Info.plist */,
+			);
+			path = ShittyImageCrop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CA31E121DC1851900FE6518 /* ShittyImageCrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA31E251DC1851900FE6518 /* Build configuration list for PBXNativeTarget "ShittyImageCrop" */;
+			buildPhases = (
+				8CA31E0F1DC1851900FE6518 /* Sources */,
+				8CA31E101DC1851900FE6518 /* Frameworks */,
+				8CA31E111DC1851900FE6518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShittyImageCrop;
+			productName = ShittyImageCrop;
+			productReference = 8CA31E131DC1851900FE6518 /* ShittyImageCrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CA31E0B1DC1851900FE6518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					8CA31E121DC1851900FE6518 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F9U3CZ4ZA6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8CA31E0E1DC1851900FE6518 /* Build configuration list for PBXProject "ShittyImageCrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CA31E0A1DC1851900FE6518;
+			productRefGroup = 8CA31E141DC1851900FE6518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CA31E121DC1851900FE6518 /* ShittyImageCrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CA31E111DC1851900FE6518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA31E211DC1851900FE6518 /* LaunchScreen.storyboard in Resources */,
+				8CA31E1E1DC1851900FE6518 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CA31E0F1DC1851900FE6518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA31E191DC1851900FE6518 /* ViewController.swift in Sources */,
+				8CA31E171DC1851900FE6518 /* AppDelegate.swift in Sources */,
+				8CA31E291DC1856900FE6518 /* ShittyImageCropVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CA31E1F1DC1851900FE6518 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CA31E201DC1851900FE6518 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CA31E231DC1851900FE6518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CA31E241DC1851900FE6518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CA31E261DC1851900FE6518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9U3CZ4ZA6;
+				INFOPLIST_FILE = ShittyImageCrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = os.ShittyImageCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CA31E271DC1851900FE6518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9U3CZ4ZA6;
+				INFOPLIST_FILE = ShittyImageCrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = os.ShittyImageCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CA31E0E1DC1851900FE6518 /* Build configuration list for PBXProject "ShittyImageCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA31E231DC1851900FE6518 /* Debug */,
+				8CA31E241DC1851900FE6518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CA31E251DC1851900FE6518 /* Build configuration list for PBXNativeTarget "ShittyImageCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA31E261DC1851900FE6518 /* Debug */,
+				8CA31E271DC1851900FE6518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CA31E0B1DC1851900FE6518 /* Project object */;
+}
