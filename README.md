@@ -6,9 +6,10 @@ I might make this into a Pod one day when I get the time to learn how to do it :
 ![screenshot](/screenshot.png?raw=true)
 
 **Usage**
+
 Add Photo Library permission request message ```Privacy - Photo Library Usage Description``` to your ```Info.plist``` since Apple decided to crash apps that don't have it instead of displaying a generic message
 
-**create/copy ShittyImageCropVC.swift**
+**Create or Copy ShittyImageCropVC.swift**
 ```swift
 
 import UIKit
