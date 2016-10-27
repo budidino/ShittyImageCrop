@@ -3,9 +3,12 @@ Couldn't find anything similar online so I hacked this together. I'm not a great
 
 I might make this into a Pod one day when I get the time to learn how to do it :)
 
-don't fogret to add Photo Library permission request message (```Privacy - Photo Library Usage Description``` in your ```Info.plist```) since Apple decided to crash apps that don't have it instead of displaying a generic message
+![screenshot](/screenshot.png?raw=true)
 
-**ShittyImageCropVC.swift**
+**Usage**
+Add Photo Library permission request message ```Privacy - Photo Library Usage Description``` to your ```Info.plist``` since Apple decided to crash apps that don't have it instead of displaying a generic message
+
+**create/copy ShittyImageCropVC.swift**
 ```swift
 
 import UIKit
@@ -162,7 +165,7 @@ class hollowView: UIView {
 }
 ```
 
-**Prompt the shitty cropper**
+**Prompt the cropper with frame, image and aspect ratio**
 ```swift
 let shittyVC = ShittyImageCropVC(frame: (self.navigationController?.view.frame)!, image: UIImage(named:"img")!, aspectWidth: 4, aspectHeight: 3)
 self.navigationController?.present(shittyVC, animated: true, completion: nil)
