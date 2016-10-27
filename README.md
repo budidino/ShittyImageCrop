@@ -91,7 +91,7 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
   
   func tappedClose() {
     print("tapped close")
-    self.navigationController?.dismiss(animated: true, completion: nil)
+    self.dismiss(animated: true, completion: nil)
   }
   
   func tappedCrop() {
@@ -119,7 +119,7 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
     
     UIImageWriteToSavedPhotosAlbum(croppedImage, self, #selector(image(image:didFinishSavingWithError:contextInfo:)), nil)
     
-    self.navigationController?.dismiss(animated: true, completion: nil)
+    self.dismiss(animated: true, completion: nil)
   }
   
   func image(image: UIImage, didFinishSavingWithError error: NSError?, contextInfo:UnsafeRawPointer) {
