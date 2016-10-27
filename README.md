@@ -3,6 +3,8 @@ Couldn't find anything similar online so I hacked this together. I'm not a great
 
 I might make this into a Pod one day when I get the time to learn how to do it :)
 
+don't fogret to add Photo Library permission request message (```Privacy - Photo Library Usage Description``` in your ```Info.plist```) since Apple decided to crash apps that don't have it instead of displaying a generic message
+
 **ShittyImageCropVC.swift**
 ```swift
 
