@@ -36,8 +36,18 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
     super.init(nibName: nil, bundle: nil)
     aspectW = aspectWidth
     aspectH = aspectHeight
-    img = image
     view.frame = frame
+
+    if (image.imageOrientation != .up) {
+      UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+      var rect = CGRect.zero
+      rect.size = image.size
+      image.draw(in: rect)
+      img = UIGraphicsGetImageFromCurrentImageContext()
+      UIGraphicsEndImageContext()
+    } else {
+      img = image
+    }
   }
   
   override func viewDidLoad() {
