@@ -33,5 +33,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Don&apos;t fotget this stupid message text since Apple couldn&apos;t default to something generic</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Don&apos;t fotget this stupid message text since Apple couldn&apos;t default to something generic</string>
 </dict>
 </plist>
