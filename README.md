@@ -14,6 +14,7 @@ Add Photo Library permission request message ```Privacy - Photo Library Usage De
 **Create or Copy ShittyImageCropVC.swift**
 ```swift
 
+
 import UIKit
 
 class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
@@ -36,18 +37,8 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
     super.init(nibName: nil, bundle: nil)
     aspectW = aspectWidth
     aspectH = aspectHeight
+    img = image
     view.frame = frame
-
-    if (image.imageOrientation != .up) {
-      UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
-      var rect = CGRect.zero
-      rect.size = image.size
-      image.draw(in: rect)
-      img = UIGraphicsGetImageFromCurrentImageContext()
-      UIGraphicsEndImageContext()
-    } else {
-      img = image
-    }
   }
   
   override func viewDidLoad() {
@@ -56,6 +47,15 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
   }
   
   func setupView() {
+    if img.imageOrientation != .up {
+      UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale)
+      var rect = CGRect.zero
+      rect.size = img.size
+      img.draw(in: rect)
+      img = UIGraphicsGetImageFromCurrentImageContext()
+      UIGraphicsEndImageContext()
+    }
+    
     closeButton = UIButton(frame: CGRect(x: 40, y: view.frame.height - 40 - 90, width: 90, height: 90))
     closeButton.setImage(UIImage(named: "crop-back"), for: .normal)
     closeButton.addTarget(self, action: #selector(tappedClose), for: .touchUpInside)
@@ -82,7 +82,7 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
     scrollView.delegate = self
     view.addSubview(scrollView)
     
-    let minZoom = max(holeWidth / imageView!.bounds.width, holeHeight / imageView!.bounds.height)
+    let minZoom = max(holeWidth / img.size.width, holeHeight / img.size.height)
     scrollView.minimumZoomScale = minZoom
     scrollView.zoomScale = minZoom
     scrollView.maximumZoomScale = minZoom*4
@@ -150,6 +150,7 @@ class ShittyImageCropVC: UIViewController, UIScrollViewDelegate {
   
 }
 
+
 // MARK: hollow view class
 
 class hollowView: UIView {
@@ -171,7 +172,9 @@ class hollowView: UIView {
   override func draw(_ rect: CGRect) {
     backgroundColor?.setFill()
     UIRectFill(rect)
+    
     let holeRectIntersection = transparentRect.intersection( rect )
+    
     UIColor.clear.setFill();
     UIRectFill(holeRectIntersection);
   }
